@@ -1,0 +1,36 @@
+=================
+== Bootstrap 5.1
+=================
+== link for website :
+https://elzerowebschool.github.io/Bootstrap_5_Design_01_Bondi/
+𝔾𝕖𝕟𝕖𝕣𝕒𝕝 ℕ𝕠𝕥𝕖𝕤:
+    1. <div class="col"> => <𝘰𝘵𝘩𝘦𝘳 𝘥𝘪𝘷 𝘳𝘦𝘤𝘰𝘮𝘮𝘢𝘯𝘦𝘥> 
+-------------------------
+[1] : Introduction And Prepare The Project
+-------------------------
+[2] : Deal With Classes
+-------------------------
+[3] : Create Navbar
+-------------------------
+[4] : Create Landing Section
+-------------------------
+[5] : Create Features Section
+-------------------------
+[6] : Create Our Work Section
+[09:10] ℂ𝕠𝕕𝕖 ℂ𝕊𝕊:
+.𝘤𝘭𝘢𝘴𝘴_𝘯𝘢𝘮𝘦::before {
+    content: 𝗮𝘁𝘁𝗿(𝘥𝘢𝘵𝘢-𝘢𝘵𝘵𝘳𝘪𝘣𝘭𝘶𝘵𝘦);
+}
+-------------------------
+[7] : Create Stuff Section
+-------------------------
+[8] : Create Our Team Section
+-------------------------
+[9] : Create Tech And Project Sections
+-------------------------
+[10] : Create Blog Section
+-------------------------
+[11] : Create Subscribe Section
+-------------------------
+[12] : Create Footer And The End
+-------------------------

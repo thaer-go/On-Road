@@ -1,0 +1,291 @@
+/* Start Main Rules */
+:root {
+    --dark-color: #353b48;
+    --dark-color-trans: #13161de5;
+    --light-dark:#393838ad;
+    --green-color: #33d1cc;
+    --green2-color: #2ecc71;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --yellow-color-trans: #ffc400e3;
+    --section-color: #eff7fa;
+    --dark-grey:#393838e3;
+    --text-color:#bbbaba;
+}
+body {
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    animation: transitionIn .8s;
+    text-transform:capitalize;
+}
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* End Main Rules */
+/* Start Resume */
+.resume {
+    position:relative;
+    background-image:url('../images/resume/background_1.jpg');
+    background-size:cover;
+    height:300vh;
+}
+.resume::after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:var(--dark-color-trans);
+}
+.resume .custom-container {
+    position:absolute;
+    top:200px;
+    left:50%;
+    transform:translateX(-50%);
+    width:95vw;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    z-index:2;
+}
+.resume .custom-container .fraction-1 .avatar {
+    border-top-left-radius:50%;
+    padding: 0 10px 10px;
+}
+.resume .custom-container .fraction-1 .avatar img {
+    border-top-left-radius:50%
+}
+.resume .custom-container .fraction-1 .info-container {
+    padding:20px 30px;
+}
+.resume .custom-container .fraction-1 .info-container h4 {
+    color: #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+}
+.resume .custom-container .fraction-1 .info-container ul {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+}
+.resume .custom-container .fraction-1 .info-container ul li {
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.resume .custom-container .fraction-1 .info-container ul li span {
+    flex-grow:1;
+}
+.resume .custom-container .fraction-2 {
+    background-color: #f9f9f9;
+    padding: 0 20px;
+    border-radius: 2px;
+}
+.resume .custom-container .fraction-2 h1 {
+    text-transform:uppercase;
+    font-size: 50px;
+    margin-top:40px;
+    margin-bottom:10px;
+    font-weight:bold;
+    letter-spacing: 0.8px;
+}
+.resume .custom-container .fraction-2 h1:nth-child(2) {
+    margin: -15px 0px -10px;
+}
+.resume .custom-container .fraction-2 h2 {
+    color:var(--yellow-color);
+    margin:0 0 40px 0;
+}
+.resume .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid #dfdfdf; 
+    cursor:pointer;
+    background-color: #fff;
+    color: #777;
+    transition:background-color .3s, color .3s;
+    border-radius:4px;
+    margin-bottom:5px;
+}
+.resume .title:hover {
+    border-color:var(--yellow-color);
+    color:var(--yellow-color);
+}
+.resume .title span {
+    font-size: 1.3em;
+}
+.resume .title span:last-child {
+    transition:transform .3s;
+}
+.resume .content {
+    background-color: #fff;
+    padding: 0 20px;
+    color: #555;
+    margin:0;
+    height:0;
+}
+.resume .content .para {
+    opacity:0;
+    overflow:hidden;
+    padding:0px;
+    margin:0px;
+    display:none;
+    line-height:1.6;
+}
+.resume .content .para strong {
+    margin-top:10px;
+}
+.resume .content .para span {
+    border: 1px solid #e8e8e8;
+    display: block;
+    margin: 10px 0;
+    width: 90%;
+}
+.resume .content .para span.progress {
+    display:block;
+    width:100%;
+    height:25px;
+    background-color:transparent;
+    position:relative;
+    margin:0 0 10px 0;
+}
+.resume .content .para span.progress::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--green2-color);
+    height: 100%;
+    color: #fff;
+    line-height: 25px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.resume .content .para span.p-1::after {
+    content: "30 %";
+    width: 25%;
+}
+.resume .content .para span.p-2::after {
+    content: "80 %";
+    width: 80%;
+}
+.resume .content .para span.p-3::after {
+    content: "100 %";
+    width: 100%;
+}
+/* End Plog */
+@keyframes slideUp {
+    0% {
+        height:160vh;
+        padding:10px 20px;
+    }
+    100% {
+        height:0;
+        padding:0 20px;
+    }
+}
+@keyframes para2 {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+@keyframes slideDown {
+    0% {
+        height:0;
+        padding:0 20px;
+    }
+    100% {
+        height:190vh;
+        padding:20px 20px;
+    }
+}
+@keyframes para {
+    0% {
+        overflow:hidden;
+        opacity:0;
+    }
+    100% {
+        overflow:visible;
+        opacity:1;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .resume .title span {
+        font-size:1em;
+    }
+    .resume .content .para {
+        font-size:0.84em
+    }
+    .resume .custom-container .fraction-2 h1 {
+        font-size:2.5em;
+    }
+    .resume .custom-container .fraction-1 .info-container p,
+    .resume .custom-container .fraction-2 p {
+        font-size:0.9em
+    }
+    .resume .custom-container .fraction-1 .info-container ul:first-of-type li {
+        grid-template-columns:2fr 3fr;
+    }
+}
+@media (max-width:767px) {
+    .resume {
+        height: 245vh;
+    }
+    .resume .custom-container {
+        top:80px;
+        grid-template-columns:1fr;
+    }
+    .resume .custom-container .fraction-1 .avatar {
+        border-radius:50%;
+        padding:5px;
+        background-color:#fff;
+        width:60vw;
+        margin:0 auto;
+    }
+    .resume .custom-container .fraction-1 .avatar img {
+        border-radius:50%;
+    }
+    .resume .custom-container .fraction-1 .info-container h4 {
+        padding: 5px 0;
+        text-align: center;
+    }
+    .resume .custom-container .fraction-1 .info-container ul:first-of-type li {
+        grid-template-columns:1fr 2fr;
+    }
+    .resume .custom-container .fraction-1 .info-container p,
+    .resume .custom-container .fraction-2 p {
+        text-align:justify;
+    }
+    .resume .custom-container .fraction-2 h1 {
+        font-size:40px;
+    }
+    .resume .title span {
+        font-size:1em;
+    }
+    .resume .content .para {
+        font-size:0.84em
+    }
+    @keyframes slideDown {
+        0% {
+            height:0;
+            padding:0 20px;
+        }
+        100% {
+            height:115vh;
+            padding:20px 20px;
+        }
+    }
+}
+/* End Resume */
